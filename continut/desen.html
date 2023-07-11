@@ -1,0 +1,157 @@
+<section>
+    <article style="text-align: center;">
+        <h1 class="header1">DESEN</h1>
+        <h2 class="header2">care conține steagurile țărilor reprezentative ale dramelor care se regăsesc pe acest site.
+        </h2>
+    </article>
+</section>
+
+<hr />
+
+<section>
+    <article>
+        <svg width="1450" height="696" style="margin-left: -99px;transform:scale(0.89)">
+            <!--Filtre-->
+            <defs>
+                <linearGradient id="logo" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="10%" style="stop-color:rgb(194, 52, 52)" />
+                    <stop offset="130%" style="stop-color:rgb(1,51,120)" />
+                </linearGradient>
+
+                <linearGradient id="aripiFluture" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(177, 225, 228)" />
+                    <stop offset="100%" style="stop-color:rgb(242, 196, 219)" />
+                </linearGradient>
+
+                <linearGradient id="petale" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(243, 136, 195)" />
+                    <stop offset="100%" style="stop-color:rgb(242, 196, 219)" />
+                </linearGradient>
+
+                <filter id="blur" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                </filter>
+                <filter id="shade" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                </filter>
+
+                <g id="fluture" transform="rotate(-10 50 100)">
+                    <ellipse cx="90" cy="90" rx="10" ry="15" fill="url(#aripiFluture)" transform="rotate(-45,90,90)" />
+                    <ellipse cx="105" cy="75" rx="10" ry="15" fill="url(#aripiFluture)" transform="rotate(45,90,90)" />
+
+                    <ellipse cx="90" cy="120" rx="10" ry="15" fill="url(#aripiFluture)" transform="rotate(-45,90,90)" />
+                    <ellipse cx="105" cy="105" rx="10" ry="15" fill="url(#aripiFluture)" transform="rotate(45,90,90)" />
+
+                    <ellipse cx="100" cy="100" rx="20" ry="3" fill="black" />
+                    <polyline points="120,100 125,85 " stroke="black" />
+                    <polyline points="120,100 125,115 " stroke="black" />
+                </g>
+
+                <g id="floare">
+                    <ellipse cx="80" cy="80" rx="5" ry="15" fill="green" transform="rotate(-99,90,90)" />
+                    <ellipse cx="100" cy="60" rx="5" ry="15" fill="green" transform="rotate(90,90,90)" />
+                    <ellipse cx="100" cy="80" rx="5" ry="15" fill="green" />
+                    <ellipse cx="100" cy="120" rx="5" ry="15" fill="green" />
+
+                    <ellipse cx="90" cy="90" rx="10" ry="15" fill="url(#petale)" transform="rotate(-45,90,90)" />
+                    <ellipse cx="105" cy="75" rx="10" ry="15" fill="url(#petale)" transform="rotate(45,90,90)" />
+                    <ellipse cx="90" cy="120" rx="10" ry="15" fill="url(#petale)" transform="rotate(-45,90,90)" />
+                    <ellipse cx="105" cy="105" rx="10" ry="15" fill="url(#petale)" transform="rotate(45,90,90)" />
+                    <circle cx="100" cy="100" r="5" fill="yellow" />
+                    <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s"
+                        repeatCount="indefinite" />
+                </g>
+            </defs>
+
+            <!--Steag Coreea-->
+            <g id="Coreea">
+                <path d="M205,140 a60,60 0 1,0 -120,0" fill="rgb(198,12,49)" /><!--Jumatatea de sus-->
+                <path d="M85,140 a60,60 0 0,0 120,0" fill="rgb(1,51,120)" /><!--Jumatatea de jos-->
+
+                <!--stanga sus-->
+                <rect width="80" height="10" fill="black" transform="rotate(-40, 120, 10)" />
+                <rect width="80" height="10" fill="black" transform="rotate(-40, 140, 3)" />
+                <rect width="80" height="10" fill="black" transform="rotate(-40, 160, -5)" />
+
+                <!--dreapta sus-->
+                <rect width="35" height="10" fill="black" transform="rotate(40, 70, 318)" />
+                <rect width="35" height="10" fill="black" transform="rotate(40, 49, 380)" />
+                <rect width="80" height="10" fill="black" transform="rotate(40, 50, 310)" />
+                <rect width="35" height="10" fill="black" transform="rotate(40, 30, 303)" />
+                <rect width="35" height="10" fill="black" transform="rotate(40, 9, 364)" />
+
+                <!--stanga jos-->
+                <rect width="80" height="10" fill="black" transform="rotate(-134, 100, 100)" />
+                <rect width="35" height="10" fill="black" transform="rotate(-134, 96, 107)" />
+                <rect width="35" height="10" fill="black" transform="rotate(-134, 74, 98)" />
+                <rect width="80" height="10" fill="black" transform="rotate(-134, 93, 115)" />
+
+                <!--dreapta jos-->
+                <rect width="35" height="10" fill="black" transform="rotate(136, 87, 145)" />
+                <rect width="35" height="10" fill="black" transform="rotate(136, 65, 153.5)" />
+                <rect width="35" height="10" fill="black" transform="rotate(136, 90, 152)" />
+                <rect width="35" height="10" fill="black" transform="rotate(136, 68, 161)" />
+                <rect width="35" height="10" fill="black" transform="rotate(136, 93, 160)" />
+                <rect width="35" height="10" fill="black" transform="rotate(136, 71, 168)" />
+            </g>
+
+            <!--Steag Japonia-->
+            <g id="Japonia">
+                <circle cx="1300" cy="580" r="60" fill="rgb(189,0,41)" />
+            </g>
+
+            <!--Steag China-->
+            <!--sus
+                    stanga jos
+                    dreapta sus
+                    stanga sus
+                    dreapta jos-->
+            <g id="China">
+                <rect x="28" y="520" width="280" height="160" fill="rgb(223,40,15)" />
+                <polygon points="70,535 50,600 100,560 40,560 90,600" fill="rgb(255,223,0)" fill-rule="nonzero" />
+                <polygon points="130,534 125,550 137,540 123,540 135,550" fill="rgb(255,223,0)" fill-rule="nonzero" />
+                <polygon points="130,534 125,550 137,540 123,540 135,550" fill="rgb(255,223,0)" fill-rule="nonzero"
+                    transform="translate(20,15)" />
+                <polygon points="130,534 125,550 137,540 123,540 135,550" fill="rgb(255,223,0)" fill-rule="nonzero"
+                    transform="translate(20,45)" />
+                <polygon points="130,534 125,550 137,540 123,540 135,550" fill="rgb(255,223,0)" fill-rule="nonzero"
+                    transform="translate(0,60)" />
+            </g>
+
+            <!--Steag Thailanda-->
+            <g id="Thailanda">
+                <rect x="1160" y="40" width="280" height="175" fill="rgb(223,40,15)" />
+                <rect x="1160" y="40" width="280" height="32.5" fill="rgb(207,20,43)" />
+                <rect x="1160" y="72.5" width="280" height="32.5" fill="white" />
+                <rect x="1160" y="105" width="280" height="45" fill="rgb(0,36,125)" />
+                <rect x="1160" y="150" width="280" height="32.5" fill="white" />
+                <rect x="1160" y="182.5" width="280" height="32.5" fill="rgb(207,20,43)" />
+            </g>
+
+            <!--Centrul-->
+            <ellipse cx="750" cy="350" rx="250" ry="100" fill="url(#logo)" filter="url(#blur)" />
+            <text fill="#ffffff" font-size="60" font-family="Cursive" x="540" y="370" filter="url(#shade)">My
+                Drama
+                List</text>
+
+            <!--fluture-->
+            <use xlink:href="#fluture" x="480" y="184" />
+
+            <!--flori pe ecran-->
+            <use xlink:href="#floare" x="300" y="184" />
+            <use xlink:href="#floare" x="50" y="270" />
+            <use xlink:href="#floare" x="345" y="470" />
+            <use xlink:href="#floare" x="585" y="520" />
+            <use xlink:href="#floare" x="500" y="24" />
+            <use xlink:href="#floare" x="700" y="-70" />
+            <use xlink:href="#floare" x="340" y="-70" />
+            <use xlink:href="#floare" x="830" y="100" />
+            <use xlink:href="#floare" x="830" y="400" />
+            <use xlink:href="#floare" x="1040" y="500" />
+            <use xlink:href="#floare" x="1080" y="250" />
+            <use xlink:href="#floare" x="1280" y="360" />
+        </svg>
+    </article>
+</section>

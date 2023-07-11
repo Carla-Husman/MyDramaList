@@ -1,0 +1,107 @@
+<aside style="height: auto; margin-top: 0px;">
+    <article style="text-align: center; margin-top: 0px; height: 200 px;">
+        <a href="#Section1">
+            <h1 class="invat">Nu știi cât este ora, locația ta sau pe ce browser ești?</h1>
+        </a>
+    </article>
+
+    <article style="text-align: center;">
+        <a href="#Section2">
+            <h1 class="invat">Arată-ne cât de talentat ești când iei o pauză!</h1>
+        </a>
+    </article>
+
+    <article style="text-align: center;">
+        <a href="#Section3" style="margin: 0;">
+            <h1 class="invat">Spune-ne care este topul tău cu drame?</h1>
+        </a>
+    </article>
+</aside>
+
+<section>
+    <article style="text-align: center;height: auto;">
+        <p class="subtitle" style="margin-top: 0px;">Explorează pagina! Apasă pe oricare dintre opțiuni.</p>
+    </article>
+</section>
+
+<hr />
+
+<section id="Section1">
+    <article style="height: 225px;">
+        <p class="pSection1">
+            Te interesează câteva informații legate de computerul tău? Nu știi
+            cât este ceasul sau ce zi e astăzi? Poți afla cu ușurință din această
+            pagina care actualizează în timp real informațiile.
+        </p>
+    </article>
+    <article style="height: 225px;">
+        <div class="myPadding" style="width: 900px;">
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Data de astăzi</strong>: <span id="data"></span>
+            </p>
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Timpul curent</strong>: <span id="timp"></span>
+            </p>
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Url</strong>: <span id="url"></span> </p>
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Locație</strong>: <span id="locatie"></span> </p>
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Browser</strong>: <span id="browser"></span> </p>
+            <p style="margin-top: 0px;"><strong style="color: #5e452c">Sistemul de operare</strong>: <span
+                    id="sistemOperare"></span></p>
+            <button onclick="Sectiunea1()">Încarcă</button>
+        </div>
+    </article>
+</section>
+
+<hr />
+
+<section id="Section2">
+    <article>
+        <p class="pSection2">
+            Ești în pauză? Desenează-ne ceea ce te-a impresionat la serialul tău preferat!
+            Fii creativ, fii unic! Lasă-ți imaginația să zboare.
+        </p>
+    </article>
+    <article>
+        <canvas id="canva" width="900px" height="600px"
+            style="border:1px solid #000000; background-color: #f5eddf;"></canvas><br />
+        <label style="color: #5e452c;font-weight: bold;">Selectează culoarea pentru contur:</label>
+        <input type="color" id="contur" value="#ff03a0" style="margin-left: 20px; width: 169px;"><br />
+        <label style="color: #5e452c;font-weight: bold;">Selectează culoarea pentru umplere:</label>
+        <input type="color" id="umplere" value="#ff0000" style="margin-left: 8px; width: 169px;">
+        <button style="margin-left: 385px;" onclick="Sectiunea2()">Desenează</button><br />
+    </article>
+</section>
+
+<hr />
+
+<section id="Section3">
+    <article>
+        <p class="pSection3">
+            Scrie linia sau coloana la care vrei să introduci o nouă celulă. Totodată
+            alege și culoarea dorită ca să evidențiezi noua inserare pe care o faci.
+        </p>
+    </article>
+    <article class="myPadding">
+        <table id="tabelInvat" style="width: 900px;">
+            <tr>
+                <td>Nr.</td>
+                <td>Denumire</td>
+                <td>Notă</td>
+            </tr>
+        </table>
+
+        <br />
+        <label style="margin-left: 20px; color: #5e452c;font-weight: bold;">Linia/Coloana (la care vrei să
+            introduci):</label>
+        <input type="text" id="liniaColoana" value="0" style="margin-left: 10px"><br />
+        <label style="margin-left: 20px; color: #5e452c;font-weight: bold;">Selectează culoarea pentru
+            linie:</label>
+        <input type="color" id="linie" value="#f34fff" style="margin-left: 64px; width: 169px;"><br />
+        <label style="margin-left: 20px; color: #5e452c; font-weight: bold;">Selectează culoarea pentru
+            coloană:</label>
+        <input type="color" id="coloana" value="#ffffff" style="margin-left: 42px; width: 169px;"><br />
+        <br />
+        <button type="button" id="butonLinie" onclick="ButonLinie()" style="margin-left: 20px">Inserează
+            linia!</button>
+        <button type="button" id="butonColoana" onclick="ButonColoana()" style="margin-left: 20px">Inserează
+            coloana!</button> <br />
+    </article>
+</section>

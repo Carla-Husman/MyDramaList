@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Sf. Gheorghe</strada>
+            <numar>16</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <meserie>Profesor</meserie>
+            <facultate>Automatica si Calculatoare</facultate>
+            <cetatenie>romana</cetatenie>
+        </CV>
+    </persoana>
+    <persoana id="2">
+        <nume>Husman</nume>
+        <prenume>Carla-Gabriela</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Pantelimon Halipa</strada>
+            <numar>18</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <meserie>Student</meserie>
+            <facultate>Automatica si Calculatoare</facultate>
+            <cetatenie>romana</cetatenie>
+        </CV>
+    </persoana>
+    <persoana id="3">
+        <nume>Ionescu</nume>
+        <prenume>Marina</prenume>
+        <varsta>27</varsta>
+        <adresa>
+            <strada>Nicolae Balecscu</strada>
+            <numar>8</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <meserie>Electrician</meserie>
+            <facultate>Economie</facultate>
+            <cetatenie>romana</cetatenie>
+        </CV>
+    </persoana>
+</persoane>

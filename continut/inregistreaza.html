@@ -1,0 +1,77 @@
+<section>
+    <article style="text-align: center;">
+        <h1 class="header1">Înregistrare</h1>
+        <h2 class="header2">Crează-ți propriul univers</h2>
+    </article>
+</section>
+
+<hr />
+
+<section>
+    <article style="margin-left: 30px">
+        <figure>
+            <img src="Imagini/inregistrare.jpg" alt="My drama list" style="width:400px">
+        </figure>
+    </article>
+
+    <article>
+        <form id="form" method="POST">
+            <fieldset style="width: 500px; border-color: #b9936c; border-radius: 5px;">
+                <legend style="color: #5e3f20;">Informații generale:</legend>
+                <label>Nume utilizator:</label>
+                <input type="text" id="numeUtilizator" name="numeUtilizator"
+                    style="width: 300px; margin-left: 45px;" /><br /><br />
+                <label>Parola:</label>
+                <input type="password" id="parola" name="parola"
+                    style="width: 300px; margin-left: 112px;" /><br /><br />
+                <label>Nume/Prenume:</label>
+                <input type="text" id="nume" name="nume" style="width: 140px; margin-left: 45px;" />
+                <input type="text" id="prenume" name="prenume" style="width: 140px; margin-left: 9px;" /><br /><br />
+
+
+                <label>Email:</label>
+                <input type="email" id="email" name="email" style="width: 300px; margin-left: 115px;" /><br /><br />
+                <label>Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" style="width: 300px; margin-left: 104px;" />
+            </fieldset>
+
+            <br />
+
+            <fieldset style="width: 500px; border-color: #b9936c; border-radius: 5px;">
+                <legend style="color: #5e3f20;">Informații personale:</legend>
+                <label>Sex: </label>
+                <select name="sex" id="sex" style="width: 306px; height: 20px; margin-left: 131px;">
+                    <option value="feminin">Feminin</option>
+                    <option value="masculin">Masculin</option>
+                </select><br /><br />
+                <label>Dramă preferată:</label>
+                <input list="serial-preferat" name="preferat" id="preferat" style="width: 300px; margin-left: 40px;" />
+                <datalist id="serial-preferat">
+                    <option value="Moon Lovers: Scarlet Heart Ryeo">
+                    <option value="Descendants of the Sun">
+                    <option value="Vincenzo">
+                    <option value="Alchemy of Souls">
+                    <option value="Boys Over Flowers">
+                </datalist><br /><br />
+                <label>Culoare preferată:</label>
+                <input type="color" id="color" name="color" style="width: 306px; margin-left: 32px;" /><br /><br />
+                <label>Data/Ora nașterii:</label>
+                <input type="date" id="dataNasterii" name="dataNasterii"
+                    style="width: 140px; height: 20px; margin-left: 33px;" />
+                <input type="time" id="oraNasterii" name="oraNasterii"
+                    style="width: 140px; margin-left: 14px;" /><br /><br />
+                <label>Vârsta:</label>
+                <input type="range" id="varsta" name="varsta" min="7" max="106" value="20" step="1"
+                    style="width: 307px; margin-left: 110px;" /><br /><br />
+                <label>Adresă pagină pers.:</label>
+                <input type="url" id="adresaPagina" name="adresaPagina"
+                    style="width: 300px; margin-left: 13px;" /><br /><br />
+                <label>Descriere:</label>
+                <textarea id="descriere" name="descriere" rows="3" cols="39" style="margin-left: 87px;"></textarea>
+                <br />
+            </fieldset>
+            <br />
+            <button onclick="inregistreaza()">Înregistrează</button>
+        </form>
+    </article>
+</section>

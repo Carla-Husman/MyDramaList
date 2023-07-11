@@ -1,0 +1,39 @@
+<section>
+    <article style="text-align: center;">
+        <h1 class="header1">Trimite flori</h1>
+        <h2 class="header2">Susține-ți actorii preferați trimițând flori virtuale pentru a le spori
+            popularitatea.</h2>
+    </article>
+</section>
+
+<hr />
+
+<section>
+    <article>
+        <label for="actor" style="color: #5e452c;font-weight: bold;">Actor:</label>
+        <input type="text" id="actor" style="margin-left: 20px; width: 169px;" />
+
+        <label for="flori" style="color: #5e452c;font-weight: bold; margin-left: 24px;">Flori:</label>
+        <input type="text" id="flori" style="margin-left: 24px; width: 169px;" />
+
+        <br /><br />
+
+        <label for="localSt">Alege locul stocării:</label><br />
+        <input type="radio" id="localSt" checked name="storage-type" value="localStorage" /> Web Storage API
+        <br />
+        <input type="radio" id="IndexedSt" name="storage-type" value="indexedDB" /> Indexed DB <br /><br />
+
+        <button style="margin-left: 10px;" onclick="pressAdd(); worker();">Trimite flori!</button>
+
+        <br /><br />
+    </article>
+    <article>
+        <table id="tabelCumparaturi">
+            <tr>
+                <th>Nr.</th>
+                <th>Actor</th>
+                <th>Cantitate flori</th>
+            </tr>
+        </table>
+    </article>
+</section>

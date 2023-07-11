@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana*)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+<!ELEMENT persoana (nume, prenume, varsta,adresa, CV)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT CV (meserie, facultate, cetatenie)>
+<!ELEMENT meserie (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+<!ELEMENT cetatenie (#PCDATA)>
+]>
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Sf. Gheorghe</strada>
+            <numar>16</numar>
+            <localitate>Iași</localitate>
+            <judet>Iași</judet>
+            <tara>România</tara>
+        </adresa>
+        <CV>
+            <meserie>Profesor</meserie>
+            <facultate>Automatică și Calculatoare</facultate>
+            <cetatenie>română</cetatenie>
+        </CV>
+    </persoana>
+    <persoana id="2">
+        <nume>Hușman</nume>
+        <prenume>Carla-Gabriela</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Pantelimon Halipa</strada>
+            <numar>18</numar>
+            <localitate>Iași</localitate>
+            <judet>Iași</judet>
+            <tara>România</tara>
+        </adresa>
+        <CV>
+            <meserie>Student</meserie>
+            <facultate>Automatică și Calculatoare</facultate>
+            <cetatenie>română</cetatenie>
+        </CV>
+    </persoana>
+    <persoana id="3">
+        <nume>Ionescu</nume>
+        <prenume>Marina</prenume>
+        <varsta>27</varsta>
+        <adresa>
+            <strada>Nicolae Bălcescu</strada>
+            <numar>8</numar>
+            <localitate>Iași</localitate>
+            <judet>Iași</judet>
+            <tara>România</tara>
+        </adresa>
+        <CV>
+            <meserie>Electrician</meserie>
+            <facultate>Economie</facultate>
+            <cetatenie>română</cetatenie>
+        </CV>
+    </persoana>
+</persoane>
